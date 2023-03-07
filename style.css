@@ -202,6 +202,10 @@ main p {
     place-items: center;
   }
 
+  .card h2 {
+    display: none;
+  }
+
   .cards img {
     width: 22rem;
   }
