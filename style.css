@@ -7,6 +7,7 @@
 :root {
   --ff-title: "Staatliches", cursive;
   --ff-paragraph: "Palanquin", sans-serif;
+  --ff-footer: "Open Sans", sans-serif;
 
   font-size: 62.5%;
 
@@ -154,7 +155,11 @@ main p {
 @media (min-width: 1440px) {
   body::before {
     width: 37.7rem;
-    height: 100%;
+    height: 100vh;
+  }
+
+  .logo {
+    display: none;
   }
 
   header,
@@ -192,7 +197,7 @@ main p {
       "D B F"
       "D E F";
 
-    margin: 10rem auto;
+    margin: 6.4rem auto;
 
     place-items: center;
   }
@@ -223,10 +228,44 @@ main p {
   .cards .card:nth-child(6) {
     grid-area: F;
   }
+
+  .footer {
+    font-family: var(--ff-footer);
+    line-height: 2.8rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+
+    color: var(--dark-blue);
+
+    text-align: center;
+  }
+
+  .footer a {
+    text-decoration: none;
+    font-weight: bold;
+
+    color: var(--dark-blue);
+  }
 }
 
 @media (max-width: 1439px) {
+  .logo2 {
+    display: none;
+  }
+
   header p {
+    display: none;
+  }
+
+  .cards .card:nth-child(3) {
+    display: none;
+  }
+
+  .cards .card:nth-child(4) {
+    display: none;
+  }
+
+  .footer {
     display: none;
   }
 }
