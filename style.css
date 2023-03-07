@@ -87,8 +87,7 @@ main p {
 }
 
 .cards {
-  padding: 0 3.2rem;
-  margin: 0 auto 6rem;
+  margin: 0 3.2rem 6rem;
 
   display: grid;
   gap: 3.2rem;
@@ -155,10 +154,11 @@ main p {
 @media (min-width: 1440px) {
   body::before {
     width: 37.7rem;
-    height: 100vh;
+    height: 100%;
   }
 
-  header {
+  header,
+  header h1 {
     width: 37.7rem;
   }
 
@@ -176,6 +176,9 @@ main p {
 
   .page {
     display: flex;
+    gap: 20rem;
+
+    max-width: 144rem;
   }
 
   main p {
@@ -188,6 +191,14 @@ main p {
       "A B C"
       "D B F"
       "D E F";
+
+    margin: 10rem auto;
+
+    place-items: center;
+  }
+
+  .cards img {
+    width: 22rem;
   }
 
   .cards .card:nth-child(1) {
@@ -214,7 +225,7 @@ main p {
   }
 }
 
-@media (max-width: 899px) {
+@media (max-width: 1439px) {
   header p {
     display: none;
   }
