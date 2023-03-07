@@ -152,7 +152,7 @@ main p {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1440px) {
   body::before {
     width: 37.7rem;
     height: 100vh;
@@ -181,9 +181,7 @@ main p {
   main p {
     display: none;
   }
-}
 
-@media (min-width: 1440px) {
   .cards {
     display: grid;
     grid-template-areas:
